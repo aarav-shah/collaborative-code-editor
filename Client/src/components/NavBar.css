@@ -1,0 +1,474 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #2b2b2b;
+    color: white;
+    height: 32px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-button-text {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-button-text:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #3b82f6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.project-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.username-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.username-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.username-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.limited-badge {
+    background-color: #d97706;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.run-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #15803d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.run-button:hover {
+    background-color: #166534;
+}
+
+
+.version-badge {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.version-badge:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* UserDropdown.css */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.username-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.username-wrapper:hover {
+  background-color: #f5f5f5;
+}
+
+.username-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.username-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #4a90e2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 4px 0;
+}
+
+.logout-button {
+  color: #dc3545;
+}
+
+/* Optional: Add animation for dropdown */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  animation: dropdownFade 0.2s ease-out;
+}
+
+
+
+
+
+
+
+/* UserDropdown.css */
+:root {
+    --vscode-bg: #1e1e1e;
+    --vscode-dropdown-bg: #252526;
+    --vscode-hover-bg: #2a2d2e;
+    --vscode-text: #cccccc;
+    --vscode-highlight: #2b2b2b;
+    --vscode-border: #454545;
+    --vscode-blue: #4d9fff;
+    --vscode-red: #f14c4c;
+    --vscode-icon-bg: #2d2d2d;
+  }
+  
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .username-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--vscode-bg);
+    border: 1px solid var(--vscode-border);
+    transition: background-color 0.2s ease;
+  }
+  
+  .username-wrapper:hover {
+    background-color: var(--vscode-hover-bg);
+  }
+  
+  .username-name {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--vscode-text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .username-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: var(--vscode-icon-bg);
+    color: var(--vscode-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid var(--vscode-border);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    width: 200px;
+    background-color: var(--vscode-dropdown-bg);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--vscode-border);
+    z-index: 1000;
+    padding: 6px 0;
+  }
+  
+  .dropdown-item {
+    width: 100%;
+    padding: 6px 12px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--vscode-text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--vscode-hover-bg);
+  }
+  
+  .dropdown-divider {
+    height: 1px;
+    background-color: var(--vscode-border);
+    margin: 6px 0;
+  }
+  
+  .logout-button {
+    color: var(--vscode-red);
+  }
+  
+  @keyframes dropdownFade {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown-menu {
+    animation: dropdownFade 0.1s ease-out;
+  }
+
+  .modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .copy-button {
+    margin: 10px;
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .copy-button:hover {
+    background: #0056b3;
+  }
+
+  /* General VSCode dark theme styling */
+.modal{
+  background: #1e1e1e; /* VSCode dark background */
+  color: #d4d4d4; /* Light grey text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+/* VSCode-themed button */
+.nav-button-text.run-button {
+  background-color: #007acc; /* VSCode blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-button-text.run-button:hover {
+  background-color: #005a9e; /* Slightly darker blue on hover */
+}
+
+/* Copy button styling */
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3c3c3c; /* Dark grey similar to GitHub's copy button */
+  color: #d4d4d4;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-button:hover {
+  background: #5a5a5a; /* Lighter grey on hover */
+}
+
+/* Copy button icon styling */
+.copy-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements horizontally */
+  justify-content: center; /* Centers child elements vertically */
+  padding: 20px;
+  background-color: #1e1e1e; /* Matches VSCode dark theme */
+  border-radius: 8px;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #d4d4d4;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-top: 10px; /* Adds space between the button and other content */
+}
+
+.copy-button:hover {
+  color: #ffffff; /* Slight change on hover */
+}
+
+/* Copy button icon styling */
+.copy-button svg {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}
+
+.copy-success {
+  margin-top: 10px;
+  color: #4caf50; /* Success color */
+  font-size: 14px;
+  text-align: center;
+}
+
+.modalp {
+  background-color: #2a2a2a; /* Slightly lighter black */
+  padding: 10px; /* Adds padding inside the background */
+  border-radius: 5px; /* Rounds the corners */
+  color: #d4d4d4; /* Text color to contrast with the background */
+  overflow-wrap: break-word; /* Ensures long URLs wrap to the next line */
+}

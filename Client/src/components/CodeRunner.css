@@ -1,0 +1,45 @@
+/* CodeRunner.css */
+
+.coderun {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border-radius: 5px;
+    width: 100%;
+    font-family: Consolas, "Courier New", monospace;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height:100%;
+}
+
+.run-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #15803d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.run-button:hover {
+    background-color: #166534;
+}
+
+.play-icon {
+    font-size: 12px;
+}
+
+
+.output {
+    margin: 1rem;
+    background-color: #252526;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 14px;
+    white-space: pre-wrap; 
+    height:70%;
+    width:80%;
+}
